@@ -1,0 +1,8 @@
+# Verifique as branches existentes
+git branch
+
+# Mude para a branch 'dev' se ela já existe
+git checkout dev
+
+Se você estiver na branch "dev" e deseja garantir que esteja sincronizada com a versão remota, use o comando:
+git pull origin dev
