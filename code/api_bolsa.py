@@ -20,7 +20,7 @@ print(dados_bvsp.head())
 
 # Salvar os dados do índice Bovespa em um arquivo de texto (txt)
 nome_arquivo = f"Dados_BVSP_{timestamp}.txt"
-caminho_arquivo = "/workspaces/api-bolsa/doc/bovespa/"
+caminho_arquivo = "/workspaces/api-bolsa/data/bovespa/"
 
 try:
     dados_bvsp.to_csv(f"{caminho_arquivo}{nome_arquivo}", sep='\t')
