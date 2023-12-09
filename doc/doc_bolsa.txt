@@ -1,0 +1,10 @@
+Api bolsa de valores - Bovespa 
+
+Nesta api foi dedicado a concentração dos dados para realizar a extração de d=30
+É realizado a extração de 30 dias de dados
+
+Realizamos a extração dos dados com do indice Ibovespa (^BVSP) a partir de uma data específica
+Ajustamos a formatação dos valores para 0000.00
+Obter o timestamp no formato "yyyyMMdd_HHmmss"
+
+Salvar os dados do índice Bovespa em um arquivo de texto (txt)
