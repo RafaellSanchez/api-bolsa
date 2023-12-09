@@ -1,0 +1,12 @@
+;USDBRL;EURBRL;BTCBRL;USDBRLT
+moeda;USD;EUR;BTC;USD
+moeda_real;BRL;BRL;BRL;BRLT
+comparando;Dólar Americano/Real Brasileiro;Euro/Real Brasileiro;Bitcoin/Real Brasileiro;Dólar Americano/Real Brasileiro Turismo
+meximo;4.9359;5.3024;221578;4.955
+minimo;4.8941;5.271;216285;4.905
+variacao;0.0207;0.0011;1227;0.015
+porcentagem_variacao;0.42;0.02;0.57;0.3
+compra;4.9317;5.2984;218135;4.8
+venda;4.9327;5.3064;218271;5.1
+timestamp;1702070984;1702072769;1702141756;1702064160
+create_data;2023-12-08 18:29:44;2023-12-08 18:59:29;2023-12-09 14:09:16;2023-12-08 16:36:00

@@ -1,0 +1,10 @@
+Api de cotacao de valores de moedas
+
+Realizado a extração via api dos valores de moedas:
+    USD-BRL,EUR-BRL,BTC-BRL,USD-BRLT
+
+url utilizada:
+    url = 'https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,USD-BRLT'
+
+Realizado um ETL nos dados extraidos
+Salvo em um csv para consumir de acordo com o negocio.
