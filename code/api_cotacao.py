@@ -35,6 +35,8 @@ dfdados.rename(columns=new_column_name, inplace=True)
 new_index_labels = ['moeda','moeda_real','comparando', 'meximo', 'minimo', 'variacao', 'porcentagem_variacao', 'compra', 'venda', 'timestamp', 'create_data']
 dfdados.index = new_index_labels
 
+dfdados = dfdados.assign(dtigtao=timestamp)
+
 print('Alterando o index, atualizando os nomes...')
 time.sleep(3)
 print('Alterado!')

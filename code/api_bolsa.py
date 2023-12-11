@@ -15,6 +15,12 @@ dados_bvsp = dados_bvsp.applymap('{:,.2f}'.format)
 # Obter o timestamp no formato "yyyyMMdd_HHmmss"
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 
+df = pd.DataFrame(dados_bvsp)
+df = df.assign(dtigtao=timestamp)
+
+dados_bvsp = df
+
+
 # Exibir as primeiras linhas do DataFrame para visualizar as informações
 print(dados_bvsp.head())
 
