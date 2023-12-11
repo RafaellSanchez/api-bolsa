@@ -18,6 +18,11 @@ for empresa in empresas:
 
     # Obter o timestamp no formato "yyyyMMdd_HHmmss"
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    
+    df = pd.DataFrame(dados_empresa)
+    df = df.assign(dt_igtao=timestamp)
+    
+    dados_empresa = df
 
     # Salvar os dados da empresa em um arquivo de texto (txt)
     nome_arquivo = f"Dados_{empresa}_{timestamp}.txt"
