@@ -21,7 +21,7 @@ for empresa in empresas:
 
     # Salvar os dados da empresa em um arquivo de texto (txt)
     nome_arquivo = f"Dados_{empresa}_{timestamp}.txt"
-    caminho_arquivo = '/workspaces/api-bolsa/doc/acoes/'
+    caminho_arquivo = '/workspaces/api-bolsa/data/acoes/'
     
     try:
         dados_empresa.to_csv(f'{caminho_arquivo}{nome_arquivo}', sep='\t')
