@@ -23,7 +23,7 @@ nome_arquivo = f"Dados_BVSP_{timestamp}.txt"
 caminho_arquivo = "/workspaces/api-bolsa/data/bovespa/"
 
 try:
-    dados_bvsp.to_csv(f"{caminho_arquivo}{nome_arquivo}", sep='\t')
+    dados_bvsp.to_csv(f"{caminho_arquivo}{nome_arquivo}", sep=';')
 except FileNotFoundError as error:
     print(f'Erro ao salvar arquivo ', str(error))
 
