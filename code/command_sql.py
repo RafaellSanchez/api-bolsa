@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import sqlite3
+import shutil
 
 # Diretório contendo os arquivos CSV
 diretorio_txt = '/workspaces/api-bolsa/data/moeda'
@@ -24,6 +25,19 @@ for arquivo in arquivos_txt:
     
     # Inserir os dados do arquivo TXT na tabela correspondente no banco de dados
     df.to_sql(nome_tabela, conn, if_exists='replace', index=False)
+
+# Tudo que estiver dentro do diretório será copiado para o destino
+path = "/workspaces/api-bolsa/data/moeda/"
+dest = "/workspaces/api-bolsa/database/archiving/"
+
+lista = os.listdir(path)
+
+for file in lista:
+    caminho_completo_origem = os.path.join(path, file)
+    caminho_completo_destino = os.path.join(dest, file)
+    shutil.copyfile(caminho_completo_origem, caminho_completo_destino)
+    print(f"{file} copiado para {dest}")
+
 
 # Fechar a conexão com o banco de dados
 conn.close()
