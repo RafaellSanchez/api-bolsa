@@ -6,7 +6,7 @@ import time
 
 #Obter o timestam no formato 'yyyyMMdd_HHmmss'
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-
+campo_data = datetime.now().strftime('%Y-%m-%d')
 #api
 url = 'https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,USD-BRLT'
 
@@ -35,7 +35,7 @@ dfdados.rename(columns=new_column_name, inplace=True)
 new_index_labels = ['moeda','moeda_real','comparando', 'meximo', 'minimo', 'variacao', 'porcentagem_variacao', 'compra', 'venda', 'timestamp', 'create_data']
 dfdados.index = new_index_labels
 
-dfdados = dfdados.assign(dtigtao=timestamp)
+dfdados = dfdados.assign(dt_igtao=campo_data)
 
 print('Alterando o index, atualizando os nomes...')
 time.sleep(3)
