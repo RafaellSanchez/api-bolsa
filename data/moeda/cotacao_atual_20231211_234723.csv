@@ -1,0 +1,12 @@
+;USDBRL;EURBRL;BTCBRL;USDBRLT;dt_igtao
+moeda;USD;EUR;BTC;USD;2023-12-11
+moeda_real;BRL;BRL;BRL;BRLT;2023-12-11
+comparando;Dólar Americano/Real Brasileiro;Euro/Real Brasileiro;Bitcoin/Real Brasileiro;Dólar Americano/Real Brasileiro Turismo;2023-12-11
+meximo;4.9359;5.2925;218747;4.955;2023-12-11
+minimo;4.8941;5.2925;205900;4.905;2023-12-11
+variacao;0.0207;0;-7758;0.015;2023-12-11
+porcentagem_variacao;0.42;0;-3.56;0.3;2023-12-11
+compra;4.9317;5.2675;209927;4.8;2023-12-11
+venda;4.9327;5.3175;209986;5.1;2023-12-11
+timestamp;1702070984;1702262670;1702262692;1702064160;2023-12-11
+create_data;2023-12-08 18:29:44;2023-12-10 23:44:30;2023-12-10 23:44:52;2023-12-08 16:36:00;2023-12-11
