@@ -36,6 +36,7 @@ new_index_labels = ['moeda','moeda_real','comparando', 'meximo', 'minimo', 'vari
 dfdados.index = new_index_labels
 
 dfdados = dfdados.assign(dt_igtao=campo_data)
+dfdados = dfdados.rename_axis('NomeIndice').reset_index()
 
 print('Alterando o index, atualizando os nomes...')
 time.sleep(3)
