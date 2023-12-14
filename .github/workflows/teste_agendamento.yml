@@ -1,0 +1,27 @@
+name: Executar diariamente
+
+on:
+  schedule:
+    - cron: '30 23 * * *' # Define o agendamento para meia-noite (00:00) diariamente UTC
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v2
+      with:
+        ref: 'dev' # Especifica o branch que você deseja usar
+
+    - name: Configurar Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10' # Substitua 'x' pela versão do Python que seu script requer
+
+    - name: Baixar o script Python
+      run: |
+        curl -o api_bolsa.py https://raw.githubusercontent.com/RafaellSanchez/api-bolsa/dev/code/api_bolsa.py
+
+    - name: Executar o script
+      run: python api_bolsa.py
