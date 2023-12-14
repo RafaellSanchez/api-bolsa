@@ -1,0 +1,19 @@
+name: Executar Script Python
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v2
+
+      - name: Executar script Python
+        run: python /workspaces/api-bolsa/path_scheduler/teste_scheduler.py
+
+      - name: Salvar resultados
+        run: cp -r resultados/* path_scheduler/
