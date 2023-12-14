@@ -19,8 +19,8 @@ jobs:
 
       - name: Instalar dependências Python (se necessário)
         run: |
-          # Use este passo para instalar dependências Python usando pip, se necessário
-          # pip install -r requirements.txt  # Substitua por seus requisitos, se houver
+          python -m pip install --upgrade pip
+          pip install pandas
 
       - name: Executar script Python
         run: python path_scheduler/teste_scheduler.py
