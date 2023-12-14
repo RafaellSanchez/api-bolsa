@@ -12,6 +12,16 @@ jobs:
       - name: Checkout do repositório
         uses: actions/checkout@v2
 
+      - name: Configurar ambiente Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Substitua '3.x' pela versão do Python que você deseja usar
+
+      - name: Instalar dependências Python (se necessário)
+        run: |
+          # Use este passo para instalar dependências Python usando pip, se necessário
+          # pip install -r requirements.txt  # Substitua por seus requisitos, se houver
+
       - name: Executar script Python
         run: python /workspaces/api-bolsa/path_scheduler/teste_scheduler.py
 
