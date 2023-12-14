@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Checkout do código
       uses: actions/checkout@v2
+      with:
+        ref: 'dev' # Especifica o branch que você deseja usar
 
     - name: Configurar Python
       uses: actions/setup-python@v2
@@ -19,7 +21,7 @@ jobs:
 
     - name: Baixar o script Python
       run: |
-        curl -o api_bolsa.py https://raw.githubusercontent.com/RafaellSanchez/api-bolsa/workspaces/api-bolsa/code/api_bolsa.py
+        curl -o api_bolsa.py https://raw.githubusercontent.com/RafaellSanchez/api-bolsa/dev/code/api_bolsa.py
 
     - name: Executar o script
       run: python api_bolsa.py
