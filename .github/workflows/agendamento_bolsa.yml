@@ -18,4 +18,4 @@ jobs:
         python-version: '3.10' # Substitua 'x' pela versão do Python que seu script requer
 
     - name: Executar o script
-      run: python /workspaces/api-bolsa/code/api_bolsa.py
+      run: python https://raw.githubusercontent.com/RafaellSanchez/api-bolsa/workspaces/api-bolsa/code/api_bolsa.py
