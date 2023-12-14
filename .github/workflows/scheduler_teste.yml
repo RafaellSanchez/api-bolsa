@@ -12,9 +12,6 @@ jobs:
       - name: Checkout do repositório
         uses: actions/checkout@v2
 
-      - name: Conceder permissões de leitura ao arquivo
-        run: chmod +r path_scheduler/Dados_BVSP_20231214_024249.txt
-
       - name: Configurar ambiente Python
         uses: actions/setup-python@v2
         with:
@@ -26,7 +23,7 @@ jobs:
           pip install pandas
 
       - name: Executar script Python
-        run: python path_scheduler/teste_scheduler.py
+        run: python scheduler/teste_scheduler.py
 
       - name: Salvar resultados
-        run: cp -r resultados/* path_scheduler/
+        run: cp -r resultados/* scheduler/
