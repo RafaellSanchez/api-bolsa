@@ -1,4 +1,4 @@
-name: Executar diariamente
+name: Executar diariamente teste
 
 on:
     schedule:
