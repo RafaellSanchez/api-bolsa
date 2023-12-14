@@ -3,7 +3,7 @@ name: Executar diariamente teste
 on:
   schedule:
 
-    - cron: '*/5 * * * *' # Define o agendamento para meia-noite (00:00) diariamente UTC
+    - cron: '0 20  * * *' # Define o agendamento para meia-noite (00:00) diariamente UTC
 
 jobs:
   run_script:
