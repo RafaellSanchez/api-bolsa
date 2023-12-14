@@ -12,7 +12,7 @@ jobs:
     - name: Checkout do código
       uses: actions/checkout@v2
       with:
-        ref: 'dev' # Especifica o branch que você deseja usar
+        ref: 'main' # Especifica o branch que você deseja usar
 
     - name: Configurar Python
       uses: actions/setup-python@v2
