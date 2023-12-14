@@ -2,7 +2,7 @@ name: Executar diariamente teste
 
 on:
   schedule:
-    - cron: '*/2 * * * *' # A cada 2 minutos  
+    - cron: '*/5 * * * *' # A cada 2 minutos  
 
 jobs:
   run_script:
