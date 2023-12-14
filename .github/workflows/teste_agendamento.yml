@@ -29,4 +29,4 @@ jobs:
         curl -o api_bolsa.py https://raw.githubusercontent.com/RafaellSanchez/api-bolsa/dev/code/api_bolsa.py
 
     - name: Executar o script
-      run: python api_bolsa.py
+      run: python /workspaces/api-bolsa/code/api_bolsa.py
