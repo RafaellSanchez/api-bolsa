@@ -27,6 +27,9 @@ jobs:
     - name: Baixar o script Python
       run: |
         curl -o api_bolsa.py https://raw.githubusercontent.com/RafaellSanchez/api-bolsa/dev/code/api_bolsa.py
-
+    
+    - name: Criar diretório de destino
+      run: mkdir -p /workspaces/api-bolsa/data/bovespa
+    
     - name: Executar o script
       run: python api_bolsa.py
