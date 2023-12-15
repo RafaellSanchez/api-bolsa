@@ -22,9 +22,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas
 
-      - name: Executar script Python
-        run: python $GITHUB_WORKSPACE/api-bolsa/teste_scheduler.py
-      
-
-      - name: Salvar resultados
-        run: cp -r resultados/* $GITHUB_WORKSPACE/api-bolsa/
+      - name: Run Python script
+        run: python teste_scheduler.py
+        working-directory: $GITHUB_WORKSPACE/api-bolsa 
