@@ -23,5 +23,4 @@ jobs:
           pip install pandas
 
       - name: Run Python script
-        run: python teste_scheduler.py
-        working-directory: $GITHUB_WORKSPACE/api-bolsa 
+        run: python $GITHUB_WORKSPACE/api-bolsa/teste_scheduler.py
