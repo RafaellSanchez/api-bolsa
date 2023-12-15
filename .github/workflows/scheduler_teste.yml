@@ -23,8 +23,8 @@ jobs:
           pip install pandas
 
       - name: Executar script Python
-        run: python $GITHUB_WORKSPACE/.github/scheduler/teste_scheduler.py
+        run: python $GITHUB_WORKSPACE/api-bolsa/teste_scheduler.py
       
 
       - name: Salvar resultados
-        run: cp -r resultados/* $GITHUB_WORKSPACE/.github/scheduler/
+        run: cp -r resultados/* $GITHUB_WORKSPACE/api-bolsa/
