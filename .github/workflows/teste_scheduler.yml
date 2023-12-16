@@ -1,9 +1,7 @@
 name: Executar diariamente teste
 
 on:
-  schedule:
-
-    - cron: '0 20  * * *' # Define o agendamento para meia-noite (00:00) diariamente UTC
+  workflow_dispatch:  # Acionamento manual
 
 jobs:
   run_script:

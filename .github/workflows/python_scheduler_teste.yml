@@ -11,5 +11,5 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run Python script
-        run: |
-          python $GITHUB_WORKSPACE/file_teste.py
+        run: python teste_scheduler.py
+      
