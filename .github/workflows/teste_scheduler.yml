@@ -1,23 +1,23 @@
-name: Executar diariamente teste
+# name: Executar diariamente teste
 
-on:
-  workflow_dispatch:  # Acionamento manual
+# on:
+#   workflow_dispatch:  # Acionamento manual
 
-jobs:
-  run_script:
-    runs-on: ubuntu-latest
+# jobs:
+#   run_script:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout do código
-        uses: actions/checkout@v2
-        with:
-          ref: 'main' # Especifica o branch que você deseja usar
+#     steps:
+#       - name: Checkout do código
+#         uses: actions/checkout@v2
+#         with:
+#           ref: 'main' # Especifica o branch que você deseja usar
 
-      - name: Configurar Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.10' # Substitua 'x' pela versão do Python que seu script requer
+#       - name: Configurar Python
+#         uses: actions/setup-python@v2
+#         with:
+#           python-version: '3.10' # Substitua 'x' pela versão do Python que seu script requer
 
-      - name: Criar diretório de destino
-        run: mkdir -p $GITHUB_WORKSPACE/workspaces/api-bolsa/.github/scheduler/teste/
+#       - name: Criar diretório de destino
+#         run: mkdir -p $GITHUB_WORKSPACE/workspaces/api-bolsa/.github/scheduler/teste/
 

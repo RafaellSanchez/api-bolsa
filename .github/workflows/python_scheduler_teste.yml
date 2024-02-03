@@ -1,15 +1,15 @@
-name: Execute Python Script
-on:
-  workflow_dispatch:  # Acionamento manual
+# name: Execute Python Script
+# on:
+#   workflow_dispatch:  # Acionamento manual
 
-jobs:
-  run-script:
-    runs-on: ubuntu-latest
+# jobs:
+#   run-script:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v2
 
-      - name: Run Python script
-        run: python $GITHUB_WORKSPACE/teste_scheduler.py
+#       - name: Run Python script
+#         run: python $GITHUB_WORKSPACE/teste_scheduler.py
       
